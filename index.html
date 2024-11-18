@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrapTask : A Todo App</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking favicon icon -->
+    <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon">
+    <!-- linking font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="nav">
+
+        <!-- nav left which includes heading -->
+        <div class="navLeft">
+            <a href="index.html" class="title">WrapTask : A Todo App</a>
+        </div>
+
+        <!-- nav right which include nav bar buttons and hamburger -->
+        <div class="navRight">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <button type="button" id="creatorButton" class="creatorButton">Contact</button>
+            <button type="button" id="guideButton" class="guideButton">Guide</button>
+        </div>
+
+        <!-- hamburger for mobile/tablet -->
+        <div class="navRightBurger">
+            <i id="hamburger" class="fas fa-bars"></i>
+        </div>
+
+    </div>
+
+    <!-- Hamburger side bar -->
+    <div class="sidebar" id="sidebar">
+
+        <!-- to close the side bar -->
+        <div class="closeSection">
+            <button class="closeSidebar" id="closeSidebar">&times;</button>
+            <h1>WrapTask :<br> A TodoApp</h1>
+        </div>
+
+        <!-- main section of sidebar that holds all the button -->
+        <div class="toggleSection">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="mailto:samardotexe@gmail.com" target="_blank">Contact</a>
+            <button id="guideButton" class="guideButton">Guide</button>
+
+            <!-- id and navigation of creator  -->
+            <div class="links">
+                <a href="https://www.linkedin.com/in/samar-ali-ansari/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/samar-ali-ansari" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/samarfied" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <!-- disclaimer -->
+            <span class="disclaimer">Disclaimer : Recommended to be used on Desktop</span>
+        </div>   
+
+    </div>
+
+    <!-- container field that covers all the content-->
+    <div class="container" id="container">
+        <!-- right side of the container -->
+        <div id="wrapper" class="wrapper">
+
+            <!-- task list (top section) -->
+            <div id="taskList" class="taskList"></div>
+
+            <!-- input field (bottom section) -->
+            <div class="inputField">
+
+                <!-- input field where we add task -->
+                <input id="input" type="text"  placeholder="Add your Tasks here!">
+
+                <!-- add button -->
+                <input id="addButton" onclick = "addTask()" type="submit" value="Add">
+
+                <!-- reset button -->
+                <button onclick="reset()" id="reset">Reset</button>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- popups -->
+
+    <!-- guide popup menu -->
+    <div id="guidepopup" class="guidepopup" >
+
+        <!-- guide close button  -->
+        <div class="guideClose">
+            <button id=guideCloseButton class="guideCloseButton">&times;</button>
+        </div>
+
+        <!-- main content of guide -->
+        <div id="guideContent" class="guideContent">
+            <h1>WrapTask : A Todo App</h1>
+
+            <!-- guide points -->
+            <div class="guidePoints">
+                <p>1. Type your task in the Input field stated as "Add your task here!" and click "Add Task" to add it to the list.</p>
+                <p>2. Click "Reset" next to "Add" to reset all task from list as well as from your browser storage</p>
+                <p>3. Use the "Insert", "Enter", "Shift" key to quickly focus on the input field.</p>
+                <p>4. Use the "Delete" key to quickly clear all tasks.</p>
+                <p>5. Click on a task to toggle its completion status.</p>
+                <p>6. Click on "Contact" to learn more about the creator.</p>
+                <p>7.Click on the sidebar from the nav menu to quickly traverse around the TodoApp if you're using a mobile device</p>
+                <p>8. Don't worry about loosing your tasks. Even after refreshing your tasks will remain untouched</p>
+                <br>
+                <p>Don't forget to visit the Creator profiles from navbar as well as from the sidebar</p>
+                <br>
+                <p>Enjoy your Productivity <3</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- creator popup  -->
+    <div id="creatorpopup" class="creatorpopup">
+
+        <!-- creator popup close button -->
+        <div class="creatorClose">
+            <button id=creatorCloseButton class="creatorCloseButton">&times;</button>
+        </div>
+
+        <!-- creator content -->
+        <div id="creatorContent" class="creatorContent">
+            <h1>Samar Ali Ansari</h1>
+
+            <!-- creator links  -->
+            <div class="creatorLinks">
+                <a href="https://www.linkedin.com/in/samar-ali-ansari/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/samar-ali-ansari" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/samarfied" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/samarfied"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="contactme">
+                <p>Contact me : samardotexe@gmail.com</p>
+                <p>Work related inquiries : work4samar@gmail.com</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

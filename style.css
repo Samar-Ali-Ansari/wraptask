@@ -1,0 +1,738 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lexend:wght@100..900&display=swap');
+
+/* FONT BOILERPLATE */
+.acme-regular {
+    font-family: "Acme";
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* CSS Boiler plate */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend';
+}
+
+/* Body styling */
+body{
+    color: white;
+    background: url(./images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.nav{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 30px;
+    background: transparent;
+}
+
+/* navLeft */
+/* Heading styling i.e. QuickList */
+.navLeft .title{
+    color: black;
+    background: white;
+    padding: 5px;
+    height: 35px;
+    font-style: Bold;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.navRight{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navRight a{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    height: auto;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navRight a:hover{
+    cursor: pointer;
+}
+
+.navRight a:hover{
+    cursor: pointer;
+    background-color: crimson;
+}
+
+
+.navRight button{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    height: auto;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+.navRight button:hover{
+    cursor: pointer;
+    cursor: pointer;
+    background-color: crimson;
+}
+
+.navRightBurger{
+    display: none;
+}
+
+#hamburger{
+    font-weight: bold;
+}
+
+#hamburger:hover{
+    cursor: pointer;
+}
+
+
+.sidebar{
+    top: 0%;
+    right: 0%;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    display: none;
+    justify-content: start; /* Hidden by default */
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.544);
+    z-index: 1;
+}
+
+.closeSection{
+    display: block;
+}
+
+.closeSection h1{
+    font-size: 15px;
+}
+.closeSidebar{
+    display: none;
+}
+
+.toggleSection{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar a{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    height: auto;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar button{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    height: auto;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover{
+    cursor: pointer;
+}
+
+.sidebar button:hover{
+    cursor: pointer;
+}
+
+
+.sidebar a:focus{
+    outline: none;
+}
+
+.sidebar button:focus{
+    outline: none;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* Main Content styling aliasing Container that contain wrapper*/
+.container{
+    height: calc(100vh - 50px); /*height after excluding the heading*/
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Main body that holds the main functionality */
+.wrapper{
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    margin: 5px;
+}
+
+/* to disable scrollbar display */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* where all the task list are appended */
+#taskList{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    height: 85%;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* list styling for each task */
+li{
+    height: auto;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* List hover */
+li:hover{
+    cursor: pointer;
+    background-color: rgb(220, 217, 217);
+}
+
+
+/* Time that is displayed using javascript */
+.time{
+    color: grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+/* Completed task styling that is applying strikethrough */
+.completed{
+    text-decoration: line-through;
+    color: #7c7a7a;
+}
+
+/* Input field that includes Input, Add button and rsset button */
+.inputField{
+    height: 15%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input styling */
+input{
+    border-radius: 5px;
+    border: none;
+    background: white;
+    padding: 5px;
+}
+
+/* to remove the square appearing on mobile screen on clicking */
+input:focus{
+    outline: none;
+}
+
+/* input text area styling */
+#input{
+    width: 80%;
+    height: 40px;
+    padding: 20px;
+}
+
+/* Add button styling */
+#addButton{
+    width: 10%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: crimson;
+    border: none;
+}
+
+/* Add button hover styling */
+#addButton:hover{
+    cursor: pointer;
+    background-color: #a70220;
+}
+
+#addButton:focus{
+    outline: none;
+}
+
+/* Reset button styling */
+#reset{
+    padding: 10px;
+    width: 10%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: crimson;
+}
+
+/* reset hover styling */
+#reset:hover{
+    cursor: pointer;
+    background-color: #a70220;
+}
+
+#reset:focus{
+    outline: none;
+}
+
+/* popups */
+.guidepopup{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 20px;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* guide close section */
+.guideClose{
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    height: 20px;
+}
+
+
+/* guide closing button */
+.guideCloseButton{
+    color: black;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: none;
+}
+
+/* close button hover effect */
+.guideCloseButton:hover{
+    cursor: pointer;
+    background-color: crimson;
+}
+
+/* focus to remove the square line appearing  */
+.guideCloseButton:focus{
+    outline: none;
+}
+
+/* main guide content */
+.guideContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+
+/* h1 styling */
+.guideContent h1{
+    font-size: 40px;
+}
+
+/* this is for styling the p tag of guide content */
+.guidePoints{
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* creator popup */
+.creatorpopup{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 20px;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* creator close section */
+.creatorClose{
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* creator section close button styling */
+.creatorCloseButton{
+    color: black;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+
+/* button hover styling */
+.creatorCloseButton:hover{
+    cursor: pointer;
+    background-color: crimson;
+}
+
+/* focus to remove the square line appearing on the button */
+.creatorCloseButton:focus{
+    outline: none;
+}
+
+/* creator main content styling */
+.creatorContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 30px;
+}
+
+/* styling the links of the creator  */
+.creatorLinks{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contactme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* styling anchor tags  */
+.creatorLinks a{
+    color: white;
+    font-size: 30px;
+}
+
+/* styling the disclaimer line */
+.disclaimer{
+    color: grey;
+    font-size: small;
+    margin-top: 20px;
+}
+
+
+
+
+/* Mobile devices */
+@media screen and (max-width: 600px) {
+    .heading{
+        height: 8px;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .nav{
+        margin: 10px;
+    }
+
+    .navRight{
+        display: none;
+    }
+
+    .navRightBurger{
+        display: block;
+    }
+
+    .container{
+        height: calc(100vh - 120px);
+        width: 100%;
+        padding: 8px;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        margin: 0px;
+    }
+
+    #taskList{
+        height: 90%;
+        padding: 20px;
+    }
+
+    li{
+        font-size: 15px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    li:hover{
+        background-color: white;
+    }
+
+    .time{
+        font-size: 10px;
+    }
+
+    .inputField{
+        height: 10%;
+        margin: 0;
+        outline: none;;
+    }
+
+    #input{
+        width: 68%;
+        padding: 10px;
+    }
+
+    #addButton{
+        width: 15%;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    #reset{
+        width: 15%;
+        padding: 2px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .guidepopup{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        width: auto;
+        height: auto; 
+    }
+
+    .guideContent h1{
+        font-size: 15px;
+    }
+    .guidePoints{
+        padding: 10px;
+        font-size: 10px;
+    }
+
+
+}
+
+
+/* Tablets (Portrait and Landscape) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .heading{
+        height: 18px;
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .nav{
+        margin: 10px;
+    }
+
+    .navRight{
+        width: 50%;
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+    }
+
+    .navRight a{
+        width: 20%;
+    }
+
+    .navRight :no-button{
+        width: 20%;
+    }
+
+    .navRightBurger{
+        display: none;
+    }
+
+    .container{
+        height: calc(100vh - 60px);
+        width: 100%;
+        padding: 8px;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        margin: 0px;
+    }
+    #taskList{
+        height: 90%;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    li{
+        font-size: 15px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    li:hover{
+        background-color: white;
+    }
+
+    .time{
+        font-size: 10px;
+    }
+
+    .inputField{
+        height: 10%;
+        gap: 10px;
+        margin: 0;
+        outline: none;
+    }
+
+    #input{
+        width: 68%;
+        padding: 10px;
+    }
+
+    #addButton{
+        width: 15%;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    #reset{
+        width: 15%;
+        padding: 2px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .guidepopup{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        width: auto;
+        height: auto;
+    }
+
+    .guideContent h1{
+        font-size: 30px;
+    }
+    .guidePoints{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+}
