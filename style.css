@@ -205,7 +205,7 @@ body{
 
 /* Main Content styling aliasing Container that contain wrapper*/
 .container{
-    height: calc(100vh - 50px); /*height after excluding the heading*/
+    height: calc(100vh - 80px); /*height after excluding the heading*/
     width: 100%;
     padding: 20px;
     border-radius: 20px;
@@ -472,7 +472,7 @@ input:focus{
 /* button hover styling */
 .creatorCloseButton:hover{
     cursor: pointer;
-    background-color: crimson;
+    color: white;
 }
 
 /* focus to remove the square line appearing on the button */
@@ -549,7 +549,7 @@ input:focus{
     }
 
     .container{
-        height: calc(100vh - 120px);
+        height: calc(100vh - 150px);
         width: 100%;
         padding: 8px;
     }
