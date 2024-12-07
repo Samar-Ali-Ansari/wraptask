@@ -246,6 +246,11 @@ document.getElementById("creatorCloseButton").addEventListener("click", () => {
     document.getElementById("creatorpopup").style.display = "none";
 });
 
+//universal click for closing guide toggle and creator toggle
+document.querySelector(".container").addEventListener("click", () => {
+    document.getElementById("creatorpopup").style.display = "none";
+    document.getElementById("guidepopup").style.display = "none";
+});
 
 
 
