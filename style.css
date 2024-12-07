@@ -106,7 +106,7 @@ body{
 
 #hamburger{
     color: white;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 #hamburger:hover{
@@ -134,7 +134,7 @@ body{
 }
 
 .closeSection h1{
-    font-size: 15px;
+    font-size: 18px;
 }
 .closeSidebar{
     display: none;
@@ -568,9 +568,8 @@ input:focus{
     }
 
     li{
-        font-size: 15px;
-        font-weight: 400;
-        font-size: 15px;
+        font-weight: 300;
+        font-size: 18px;
     }
 
     li:hover{
@@ -578,7 +577,7 @@ input:focus{
     }
 
     .time{
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .inputField{
@@ -594,14 +593,14 @@ input:focus{
 
     #addButton{
         width: 15%;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 300;
     }
 
     #reset{
         width: 15%;
         padding: 2px;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 300;
     }
 
@@ -683,9 +682,8 @@ input:focus{
     }
 
     li{
-        font-size: 15px;
-        font-weight: 400;
-        font-size: 15px;
+        font-weight: 300;
+        font-size: 18px;
     }
 
     li:hover{
@@ -693,7 +691,7 @@ input:focus{
     }
 
     .time{
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .inputField{
@@ -710,14 +708,14 @@ input:focus{
 
     #addButton{
         width: 15%;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 300;
     }
 
     #reset{
         width: 15%;
         padding: 2px;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 300;
     }
 
@@ -737,7 +735,7 @@ input:focus{
     }
     .guidePoints{
         padding: 10px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }
