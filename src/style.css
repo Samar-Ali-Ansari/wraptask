@@ -265,7 +265,6 @@ li:hover{
 
 /* Time that is displayed using javascript */
 .time{
-    width: 10%;
     color: grey;
     padding: 10px;
     border-radius: 20px;
