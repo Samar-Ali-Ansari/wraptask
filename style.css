@@ -594,14 +594,14 @@ input:focus{
     #addButton{
         width: 15%;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     #reset{
         width: 15%;
         padding: 2px;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     .guidepopup{
@@ -710,14 +710,14 @@ input:focus{
     #addButton{
         width: 15%;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     #reset{
         width: 15%;
         padding: 2px;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     .guidepopup{
