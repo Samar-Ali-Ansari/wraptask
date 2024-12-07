@@ -640,6 +640,10 @@ input:focus{
         margin: 10px;
     }
 
+    .navLeft .title{
+        font-weight: 300;
+    }
+
     .navRight{
         width: 50%;
         display: flex;
