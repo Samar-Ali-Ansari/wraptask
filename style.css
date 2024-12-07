@@ -18,10 +18,16 @@
 
 /* Body styling */
 body{
+    height: 100%;
+    width: 100%;
     color: white;
-    background: url(./images/background.jpg);
+    background-color: #160222;
     background-size: cover;
     background-repeat: no-repeat;    
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 .nav{
@@ -38,13 +44,11 @@ body{
 /* navLeft */
 /* Heading styling i.e. QuickList */
 .navLeft .title{
-    color: black;
-    background: white;
+    color: white;
     padding: 5px;
     height: 35px;
-    font-style: Bold;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 100;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -60,52 +64,48 @@ body{
 }
 
 .navRight a{
-    color: black;
-    background-color: white;
+    color: white;
     padding: 5px;
     height: auto;
     width: 80px;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 100;
     border-radius: 5px;
 }
 
 .navRight a:hover{
     cursor: pointer;
+    background-color: #7a1cac; 
 }
-
-.navRight a:hover{
-    cursor: pointer;
-    background-color: crimson;
-}
-
 
 .navRight button{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #160222;
     padding: 5px;
     height: auto;
     width: 80px;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 100;
     border-radius: 5px;
     border: none;
 }
+
 .navRight button:hover{
     cursor: pointer;
-    cursor: pointer;
-    background-color: crimson;
+    background-color: #7a1cac;
 }
 
 .navRightBurger{
+    color: white;
     display: none;
 }
 
 #hamburger{
+    color: white;
     font-weight: bold;
 }
 
@@ -218,20 +218,15 @@ body{
 
 /* Main body that holds the main functionality */
 .wrapper{
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: calc(100vh - 50px);
     padding: 20px;
-    margin: 5px;
-}
-
-/* to disable scrollbar display */
-::-webkit-scrollbar{
-    display: none;
 }
 
 /* where all the task list are appended */
 #taskList{
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 25px;
     height: 85%;
@@ -246,6 +241,7 @@ body{
 /* list styling for each task */
 li{
     height: auto;
+    width: 80%;
     padding: 5px 30px;
     margin-bottom: 10px;
     color: black;
@@ -317,17 +313,17 @@ input:focus{
 #addButton{
     width: 10%;
     height: 40px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 100;
     color: white;
-    background-color: crimson;
+    background-color: #7a1cac;
     border: none;
 }
 
 /* Add button hover styling */
 #addButton:hover{
     cursor: pointer;
-    background-color: #a70220;
+    background-color: #5f1786;
 }
 
 #addButton:focus{
@@ -339,18 +335,18 @@ input:focus{
     padding: 10px;
     width: 10%;
     height: 40px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 100;
     border: none;
     border-radius: 5px;
     color: white;
-    background-color: crimson;
+    background-color: #7a1cac;
 }
 
 /* reset hover styling */
 #reset:hover{
     cursor: pointer;
-    background-color: #a70220;
+    background-color: #5f1786;
 }
 
 #reset:focus{
@@ -562,7 +558,7 @@ input:focus{
     }
 
     #taskList{
-        height: 90%;
+        height: 80vh;
         padding: 20px;
     }
 
