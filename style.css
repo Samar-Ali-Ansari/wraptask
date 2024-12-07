@@ -271,7 +271,7 @@ li:hover{
     color: grey;
     padding: 10px;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 /* Completed task styling that is applying strikethrough */
@@ -399,7 +399,7 @@ input:focus{
 /* close button hover effect */
 .guideCloseButton:hover{
     cursor: pointer;
-    background-color: crimson;
+    background-color: #7a1cac;
 }
 
 /* focus to remove the square line appearing  */
@@ -577,7 +577,7 @@ input:focus{
     }
 
     .time{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .inputField{
@@ -691,7 +691,7 @@ input:focus{
     }
 
     .time{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .inputField{
