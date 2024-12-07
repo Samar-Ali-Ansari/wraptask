@@ -227,7 +227,6 @@ body{
 /* where all the task list are appended */
 #taskList{
     display: flex;
-    align-items: center;
     flex-direction: column;
     padding: 25px;
     height: 85%;
@@ -243,7 +242,7 @@ body{
 li{
     height: auto;
     width: 80%;
-    padding: 5px 30px;
+    padding: 2px 30px;
     margin-bottom: 10px;
     color: black;
     background-color: white;
