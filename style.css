@@ -48,7 +48,7 @@ body{
     padding: 5px;
     height: 25px;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -71,7 +71,7 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     border-radius: 5px;
 }
 
@@ -89,7 +89,7 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     border-radius: 5px;
     border: none;
 }
@@ -314,7 +314,7 @@ input:focus{
     width: 10%;
     height: 40px;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     color: white;
     background-color: #7a1cac;
     border: none;
@@ -336,7 +336,7 @@ input:focus{
     width: 10%;
     height: 40px;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     border: none;
     border-radius: 5px;
     color: white;
@@ -369,9 +369,7 @@ input:focus{
     height: auto;
     border: 2px solid white;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: #7a1cac;
 }
 
 /* guide close section */
@@ -389,8 +387,8 @@ input:focus{
     background-color: white;
     width: 30px;
     height: 30px;
-    font-size: large;
-    font-weight: bolder;
+    font-size: larger;
+    font-weight: 300;
     border-radius: 8px;
     border: none;
 }
@@ -398,7 +396,6 @@ input:focus{
 /* close button hover effect */
 .guideCloseButton:hover{
     cursor: pointer;
-    background-color: #7a1cac;
 }
 
 /* focus to remove the square line appearing  */
@@ -418,14 +415,15 @@ input:focus{
 
 /* h1 styling */
 .guideContent h1{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* this is for styling the p tag of guide content */
 .guidePoints{
     padding: 20px;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 /* creator popup */
@@ -444,9 +442,7 @@ input:focus{
     height: auto;
     border: 2px solid white;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: #7a1cac;
 }
 
 /* creator close section */
@@ -464,7 +460,7 @@ input:focus{
     width: 30px;
     height: 30px;
     font-size: large;
-    font-weight: bold;
+    font-weight: 300;
     border-radius: 8px;
     border: none;
 }
@@ -472,7 +468,6 @@ input:focus{
 /* button hover styling */
 .creatorCloseButton:hover{
     cursor: pointer;
-    color: white;
 }
 
 /* focus to remove the square line appearing on the button */
@@ -599,7 +594,7 @@ input:focus{
     #reset{
         width: 15%;
         padding: 2px;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
     }
 
@@ -707,14 +702,14 @@ input:focus{
 
     #addButton{
         width: 15%;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
     }
 
     #reset{
         width: 15%;
         padding: 2px;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
     }
 
